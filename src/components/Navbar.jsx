@@ -18,56 +18,27 @@ function Navbar() {
           </h1>
           <ul className="hidden md:flex">
             <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-              <Link
-                onClick={handleClose}
-                to="home"
-                smooth={true}
-                duration={500}
-              >
+              <Link to="home" smooth={true} duration={500}>
                 Home
               </Link>
             </li>
             <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-              <Link
-                onClick={() => handleClose()}
-                to="about"
-                offset={-200}
-                smooth={true}
-                duration={500}
-              >
+              <Link to="about" offset={-200} smooth={true} duration={500}>
                 About
               </Link>
             </li>
             <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-              <Link
-                onClick={() => handleClose()}
-                to="support"
-                offset={-50}
-                smooth={true}
-                duration={500}
-              >
+              <Link to="support" offset={-50} smooth={true} duration={500}>
                 Support
               </Link>
             </li>
             <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-              <Link
-                onClick={() => handleClose()}
-                to="platforms"
-                offset={-100}
-                smooth={true}
-                duration={500}
-              >
+              <Link to="platforms" offset={-100} smooth={true} duration={500}>
                 Platforms
               </Link>
             </li>
             <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-              <Link
-                onClick={() => handleClose()}
-                to="pricing"
-                offset={-50}
-                smooth={true}
-                duration={500}
-              >
+              <Link to="pricing" offset={-50} smooth={true} duration={500}>
                 Pricing
               </Link>
             </li>
@@ -88,27 +59,51 @@ function Navbar() {
 
       <ul className={!show ? "hidden" : "bg-zinc-200 w-full px-8"}>
         <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-          <Link to="home" smooth={true} duration={500}>
+          <Link to="home" smooth={true} duration={500} onClick={handleClose}>
             Home
           </Link>
         </li>
         <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-          <Link to="about" offset={-200} smooth={true} duration={500}>
+          <Link
+            to="about"
+            offset={-200}
+            smooth={true}
+            duration={500}
+            onClick={handleClose}
+          >
             About
           </Link>
         </li>
         <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-          <Link to="support" offset={-50} smooth={true} duration={500}>
+          <Link
+            to="support"
+            offset={-50}
+            smooth={true}
+            duration={500}
+            onClick={handleClose}
+          >
             Support
           </Link>
         </li>
         <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-          <Link to="platforms" offset={-100} smooth={true} duration={500}>
+          <Link
+            to="platforms"
+            offset={-100}
+            smooth={true}
+            duration={500}
+            onClick={handleClose}
+          >
             Platforms
           </Link>
         </li>
         <li className="cursor-pointer border-b-2 border-zinc-300 w-full">
-          <Link to="pricing" offset={-50} smooth={true} duration={500}>
+          <Link
+            to="pricing"
+            offset={-50}
+            smooth={true}
+            duration={500}
+            onClick={handleClose}
+          >
             Pricing
           </Link>
         </li>
